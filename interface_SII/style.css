@@ -1,0 +1,157 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3f51b5;
+    color: white;
+}
+
+.block {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.block h2 {
+    color: #3f51b5;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.rules.hidden {
+    display: none; /* Блоки скрыты */
+}
+
+.rules {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+}
+
+.rule {
+    background-color: #e3f2fd;
+    border: 1px solid #c5cae9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.rule h3 {
+    color: #303f9f;
+    margin-bottom: 5px;
+}
+
+.rule p {
+    margin: 5px 0;
+}
+
+.rule strong {
+    color: #3f51b5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Стили для анимации */
+.block .rules {
+    transition: max-height 0.3s ease-out;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #3f51b5;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px; /* Отступ сверху для формы */
+    padding: 20px; /* Отступ внутри формы */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #303f9f;
+}
+
+/* Скрытый блок */
+.hidden {
+    display: none;
+}
+
+/* Стили для анимации */
+.block .rules {
+    transition: max-height 0.3s ease-out;
+}
+
+.block .rules.open {
+    display: block;
+}
+
+/* Стили для всех карточек */
+.card {
+    margin-bottom: 20px;
+}
+.add-rule-btn {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.add-rule-link {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-rule-link:hover {
+    background-color: #45a049;
+}
